@@ -76,50 +76,56 @@
         <section>
             <h2>Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru/" method="post">
-                <label for="cost">Цена:</label>
-                <input type="range" id="cost" min="0" max="30000" value="25000">
-                <ul>
-                    <li>
-                        <input type="number" id="min" min="0" max="30000" value="0">
-                    </li>
-                    <li>
-                        <input type="number" id="max" min="0" max="30000" value="30000">
-                    </li>
-                </ul>
-                <p>Производители:</p>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="bosch" checked>
-                        <label for="bosch">BOSCH</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="interskop">
-                        <label for="interskop">ИНТЕРСКОЛ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="makita" checked>
-                        <label for="makita">MAKITA</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="dewalt">
-                        <label for="dewalt">DEWALT</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="hitachi">
-                        <label for="hitachi">HITACHI</label>
-                    </li>
-                </ul>
-                <p>Питание:</p>
-                <ul>
-                    <li>
-                        <input type="radio" id="rechargeable" value="rechargeable" checked>
-                        <label for="rechargeable">Аккумуляторные</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="network" value="network">
-                        <label for="network">Сетевые</label>
-                    </li>
-                </ul>
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <input type="range" min="0" max="30000" value="25000">
+                    <ul>
+                        <li>
+                            <input type="number" id="min" min="0" max="30000" value="0">
+                        </li>
+                        <li>
+                            <input type="number" id="max" min="0" max="30000" value="30000">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="bosch" checked>
+                            <label for="bosch">BOSCH</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="interskop">
+                            <label for="interskop">ИНТЕРСКОЛ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="makita" checked>
+                            <label for="makita">MAKITA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="dewalt">
+                            <label for="dewalt">DEWALT</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hitachi">
+                            <label for="hitachi">HITACHI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="rechargeable" value="rechargeable" checked>
+                            <label for="rechargeable">Аккумуляторные</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="network" value="network">
+                            <label for="network">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
                 <input type="submit" value="Показать" />
             </form>
         </section>
@@ -135,6 +141,12 @@
                 </li>
                 <li>
                     <a href="">по функционалу</a>
+                </li>
+                <li>
+                    <a><img src="https://via.placeholder.com/11x10" alt="сортировка по возрастанию"></a>
+                </li>
+                <li>
+                    <a href=""><img src="https://via.placeholder.com/11x10" alt="сортировка по убыванию"></a>
                 </li>
             </ul>
             <ul>
