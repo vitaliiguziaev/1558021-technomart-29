@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>Каталог - Техномарт</title>
 </head>
 
-<body>
-    <header>
-        <a href="index.html">
+<body class="page-body">
+    <header class="main-header">
+        <a class="main-header-logo" href="index.html">
             <img src="https://via.placeholder.com/220x47" alt="Логотип магазина «Техномарт»">
         </a>
-        <ul>
+        <ul class="main-header-links">
             <li>
                 <form>
-                    <input type="search" placeholder="Поиск:">
+                    <input class="search" type="search" placeholder="Поиск:">
                 </form>
             </li>
             <li><a href="">Закладки: 0</a></li>
@@ -55,8 +55,8 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <ul>
+    <main class="page-catalog container">
+        <ul class="breadcrumbs">
             <li>
                 <a href="index.html">Главная</a>
             </li>
@@ -66,49 +66,49 @@
             <li>
                 <a href="">Инструмент</a>
             </li>
-            <li>
+            <li class="breadcrumbs-current">
                 Перфораторы
             </li>
         </ul>
 
-        <h1>Перфораторы</h1>
+        <h1 class="page-title">Перфораторы</h1>
 
-        <section>
+        <section class="filters">
             <h2>Фильтр:</h2>
-            <form action="https://echo.htmlacademy.ru/" method="post">
+            <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset>
                     <legend>Цена:</legend>
-                    <input type="range" min="0" max="30000" value="25000">
+                    <input class="filter-input filter-input-range" type="range" min="0" max="30000" value="25000">
                     <ul>
-                        <li>
-                            <input type="number" id="min" min="0" max="30000" value="0">
+                        <li class="filter-option filter-input">
+                            <input class="filter-input filter-input-number" type="number" id="min" min="0" max="30000" value="0">
                         </li>
-                        <li>
-                            <input type="number" id="max" min="0" max="30000" value="30000">
+                        <li class="filter-option filter-input">
+                            <input class="filter-input filter-input-number" type="number" id="max" min="0" max="30000" value="30000">
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>
-                        <li>
-                            <input type="checkbox" id="bosch" checked>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" id="bosch" checked>
                             <label for="bosch">BOSCH</label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="interskop">
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" id="interskop">
                             <label for="interskop">ИНТЕРСКОЛ</label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="makita" checked>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" id="makita" checked>
                             <label for="makita">MAKITA</label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="dewalt">
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" id="dewalt">
                             <label for="dewalt">DEWALT</label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="hitachi">
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" id="hitachi">
                             <label for="hitachi">HITACHI</label>
                         </li>
                     </ul>
@@ -116,41 +116,50 @@
                 <fieldset>
                     <legend>Питание:</legend>
                     <ul>
-                        <li>
-                            <input type="radio" id="rechargeable" value="rechargeable" checked>
+                        <li class="filter-option filter-radio">
+                            <input class="filter-input-radio filter-input" type="radio" id="rechargeable" value="rechargeable" checked>
                             <label for="rechargeable">Аккумуляторные</label>
-                        </li>
+                        </li class="filter-option">
                         <li>
-                            <input type="radio" id="network" value="network">
+                            <input class="filter-input-radio filter-input" type="radio" id="network" value="network">
                             <label for="network">Сетевые</label>
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="Показать" />
+                <input class="filter-button button" type="submit" value="Показать" />
             </form>
         </section>
 
-        <section>
+        <section class="catalog">
             <h2>Сортировка:</h2>
-            <ul>
-                <li>
+            <ul class="sorting-list">
+                <li class="sorting-item sorting-item-active">
                     <a>по цене</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                     <a href="">по типу</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                     <a href="">по функционалу</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                     <a><img src="https://via.placeholder.com/11x10" alt="сортировка по возрастанию"></a>
                 </li>
-                <li>
+                <li class="sorting-item">
                     <a href=""><img src="https://via.placeholder.com/11x10" alt="сортировка по убыванию"></a>
                 </li>
             </ul>
-            <ul>
-                <li>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 6000">
+                    <a class="catalog-item-title" href="">
+                        Перфоратор BOSCH<br>
+                        BFG 6000
+                    </a>
+                    <p>30500 Р.</p>
+                    <p>25500 Р.</p>
+                </li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 6000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -159,16 +168,7 @@
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 6000">
-                    <a href="">
-                        Перфоратор BOSCH<br>
-                        BFG 6000
-                    </a>
-                    <p>30500 Р.</p>
-                    <p>25500 Р.</p>
-                </li>
-                <li>
+                <li class="catalog-item">
                     <a href="">
                         купить
                     </a>
@@ -183,7 +183,7 @@
                     <p>25500 Р.</p>
                 </li>
 
-                <li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 3000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -192,7 +192,7 @@
                     <p>22500 Р.</p>
                     <p>15500 Р.</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 6000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -201,7 +201,7 @@
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 2000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -210,7 +210,7 @@
                     <p>12500 Р.</p>
                 </li>
 
-                <li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 3000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -219,7 +219,7 @@
                     <p>22500 Р.</p>
                     <p>15500 Р.</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 3000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -228,7 +228,7 @@
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 2000">
                     <a href="">
                         Перфоратор BOSCH<br>
@@ -238,23 +238,23 @@
                 </li>
             </ul>
 
-            <ul>
-                <li>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current">
                     <a>1</a>
                 </li>
-                <li>
+                <li class="pagination-item">
                     <a href="">2</a>
                 </li>
-                <li>
+                <li class="pagination-item">
                     <a href="">3</a>
                 </li>
-                <li>
+                <li class="pagination-item">
                     <a href="">Следующая</a>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="product-description">
             <h2>Описание товара</h2>
             <p>Пара слов о перфораторах</p>
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
@@ -341,17 +341,17 @@
         </p>
     </footer>
 
-    <section>
+    <section class="modal modal-confirmation">
         <h2>Окно подтверждения</h2>
-        <a href=""><img src="https://via.placeholder.com/21x21" alt="close"></a>
-        <img src="https://via.placeholder.com/66x66" alt="mark">
-        <p>Товар добавлен в корзину!</p>
-        <ul>
+        <a class="button close-button" href=""><img src="https://via.placeholder.com/21x21" alt="close"></a>
+        <img class="icon-confirmation" src="https://via.placeholder.com/66x66" alt="mark">
+        <p class="confirmation">Товар добавлен в корзину!</p>
+        <ul class="buttons-list">
             <li>
-                <a href="">Оформить заказ</a>
+                <a class="button create-order-button" href="">Оформить заказ</a>
             </li>
             <li>
-                <a href="">Продолжить покупки</a>
+                <a class="button proceed-shopping" href="">Продолжить покупки</a>
             </li>
         </ul>
     </section>
