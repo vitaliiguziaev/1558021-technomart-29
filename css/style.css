@@ -1,0 +1,182 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-dark: #293449;
+  --basic-grey: #c5c5c5;
+  --basic-grey-light: #f1f5f7;
+  --basic-dark-light: #32425c;
+
+  --special-orange: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-pink: #dc91d8;
+  --special-green: #8ed78f;
+  --special-dark-orange: #ffc047;
+  --special-light-orange: #ffd180;
+  --special-grey-light: #f3f7f9;
+  --special-grey-light-second: #f9f5f0;
+}
+
+body {
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--special-grey-light);
+}
+
+.main-header-links {
+  list-style: none;
+  background-color: var(--basic-dark);
+}
+
+.main-header-links a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.main-header-links .create-order-button {
+  background-color: var(--basic-green);
+}
+
+.main-header-company-description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.company-contacts-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-dark-light);
+}
+
+.company-phone-link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.user-form {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+}
+
+.user-form a {
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.main-navigation {
+  background-color: var(--basic-dark-light);
+  box-shadow: inset 0px -5px 0px var(--basic-dark);
+}
+
+.offers-list {
+  list-style: none;
+}
+
+.offers-item p {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+}
+
+.offers-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.offers-item.materials {
+  background-color: var(--special-orange);
+}
+
+.offers-item.instrument {
+  background-color: var(--special-blue);
+}
+
+.offers-item.technics {
+  background-color: var(--special-pink);
+}
+
+.offers-item.discount {
+  background-color: var(--special-green);
+}
+
+.offers-item.delivery {
+  background-color: var(--special-dark-orange);
+}
+
+.advertising {
+  background-color: var(--basic-black);
+}
+
+.advertising h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.advertising-description {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.advertising-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.popular-products-header {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark-light);
+  background-color: var(--special-grey-light-second);
+}
+
+.popular-products .all-popular-products-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
